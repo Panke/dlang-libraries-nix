@@ -6,8 +6,8 @@
         srcs = [ 
             (fetchgit {
                 url = "https://github.com/kyllingstad/zmqd.git";
-                rev = "v1.2.0";
-                sha256 = "0g82wfxss5i386khl5yswlr02a96cll40d5488rdrmlxwzb9phjg";
+                rev = "bf886631786990b4466a4a6c6f61d54c480c8752"; # 1.2.0 with some fixes
+                sha256 = "0cjk6f0aak35j6wjkswvxr4kicp2ichin73nv83wrbgm5mbl4l8l";
                 name = "zmqd";
             })
             ./package-files
