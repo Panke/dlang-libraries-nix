@@ -1,13 +1,13 @@
 { stdenv, deimos-zeromq, zeromq, meson, ninja, pkg-config, ldc, fetchgit,
   mir-core, mir-cpuid, mir-algorithm
 }:
-stdenv.mkDerivation 
+stdenv.mkDerivation
 {
     name = "mir-ion";
     version = "1.0.33";
     src = fetchgit {
         url = "https://github.com/libmir/mir-ion";
-        rev = "v1.0.33";
+        rev = "ec28d7e51d859896ef8ef923db6da5f3ed97bf9d";
         sha256 = "1b6fv47aich23z0amhipx03wgpzh4jn1j3wlngm9px68c38n1cmh";
         name = "mir-ion";
     };
