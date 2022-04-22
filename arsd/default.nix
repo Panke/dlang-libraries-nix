@@ -16,7 +16,7 @@ stdenv.mkDerivation
     sourceRoot = "arsd";
 
     mesonBuildType="debugoptimized";
-    mesonFlags="-Ddefault_library=both";
+    mesonFlags="-Ddefault_library=static";
 
     nativeBuildInputs = [ meson ninja ldc pkg-config];
 

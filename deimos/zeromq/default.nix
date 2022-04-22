@@ -14,7 +14,7 @@
         ];
 
         mesonBuildType="debugoptimized";
-        mesonFlags="-Ddefault_library=both";
+        mesonFlags="-Ddefault_library=static";
 
         sourceRoot = "ZeroMQ";
         nativeBuildInputs = [ meson ninja ldc pkg-config ];
