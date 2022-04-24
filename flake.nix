@@ -12,7 +12,10 @@
       arsd = final.callPackage ./arsd {};
       fixedpoint = final.callPackage ./fixedpoint {};
     };
-    pkgs = import nixpkgs { system = "x86_64-linux"; overlays = [ overlay_ ]; };
+    pkgs = import nixpkgs { 
+      system = "x86_64-linux"; 
+      overlays = [ overlay_ ]; 
+    };
   in
   rec {
     overlays.default = overlay_;
@@ -27,6 +30,7 @@
       arsd = pkgs.arsd;
       fixedpoint = pkgs.fixedpoint;
     };
+    checks.x86_64-linux = packages.x86_64-linux;
   };
 }
 
