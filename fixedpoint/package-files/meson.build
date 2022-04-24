@@ -20,9 +20,9 @@ this_dep = declare_dependency(
 
 pkgc = import('pkgconfig')
 pkgc.generate(name: 'fixedpoint',
-	subdirs: 'd/fixedpoint',
+	subdirs: 'd/',
 	version: meson.project_version(),
 	description: 'fixed point decimal arithmetic',
 	libraries: this_lib
 )
-install_headers(sources, subdir: 'd/')
+install_headers(sources, subdir: 'd/fixedpoint')
