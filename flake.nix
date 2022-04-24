@@ -10,6 +10,7 @@
       mir-algorithm = self.callPackage ./mir/algorithm {};
       mir-ion = self.callPackage ./mir/ion {};
       arsd = self.callPackage ./arsd {};
+      fixedpoint = self.callPackage ./fixedpoint {};
     };
     pkgs = import nixpkgs { system = "x86_64-linux"; overlays = [ overlay_ ]; };
   in
@@ -24,6 +25,7 @@
       mir-algorithm = pkgs.mir-algorithm;
       mir-ion = pkgs.mir-ion;
       arsd = pkgs.arsd;
+      fixedpoint = pkgs.fixedpoint;
     };
   };
 }
